@@ -10,11 +10,15 @@
 <body>
     <header class="header">
         <div class="container">
-            <div class="logo">God's Plan Logistics</div>
+            <div class="logo"><img
+                  class="logo"
+                  src="./images/godsplanlogo.jpg"
+                  alt="logo"
+                /></div>
             <nav class="nav">
                 <a href="#services">Services</a>
                 <a href="#about">About Us</a>
-                <a href="#testimonials">Testimonials</a>
+                <!-- <a href="#testimonials">Testimonials</a> -->
                 <a href="#contact">Contact</a>
             </nav>
         </div>
@@ -25,11 +29,11 @@
             <div class="container">
                 <h1>Reliable Courier & Delivery Service in Techiman, Ghana</h1>
                 <p>Your parcels, packages, food, and groceries delivered on time, every time.</p>
-                <a href="#contact" class="btn btn-primary">Get Started</a>
+                <a href="#" class="btn btn-primary">Order Tracking</a>
             </div>
         </section>
 
-        <!-- <section id="services" class="services">
+        <section id="services" class="services">
             <div class="container">
                 <h2>Our Services</h2>
                 <div class="service-item">
@@ -57,15 +61,15 @@
                 <p>God's Plan Logistics is dedicated to providing timely and secure delivery services in Techiman, Ghana. Our mission is to revolutionize the local delivery landscape by offering efficient, reliable, and affordable solutions to meet our customers' needs.</p>
             </div>
         </section>
-
+<!-- 
         <section id="testimonials" class="testimonials">
             <div class="container">
                 <h2>Testimonials</h2>
                 <p>"God's Plan Logistics provided exceptional service. My package was delivered on time and in perfect condition!" - Customer A</p>
                 <p>"Fast and reliable food delivery service. Highly recommended!" - Customer B</p>
             </div>
-        </section>
-
+        </section> -->
+<!-- 
         <section id="contact" class="contact">
             <div class="container">
                 <h2>Contact Us</h2>
