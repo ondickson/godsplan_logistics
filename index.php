@@ -1,3 +1,15 @@
+<?php
+// Start the session
+session_start();
+
+// Check if the user is logged in
+if (!isset($_SESSION['user_id'])) {
+    // If not, redirect to the login page
+    header("Location: login.php");
+    exit();
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,22 +22,39 @@
 <body>
     <header class="header">
         <div class="container">
-            <div class="logo">God's Plan Logistics</div>
+            <div class="logo"><img
+                  class="logo"
+                  src="../images/godsplanlogo.jpg"
+                  alt="logo"
+                /></div>
             <nav>
-                <a class="logout" href="http://192.168.10.45/godsplan_logistics/" >Logout</a>
+                <a class="logout" href="logout.php">Logout</a>
             </nav>
         </div>
     </header>
 
-    <div class="section1">
-        <h1>WELCOME ADMIN</h1>
+    <div class="content">
+        <div class="sidebar1">
+            <?php include 'sidebar.php' ?>
+        </div> 
+        <div class="mainContent">
+            <h1>WELCOME ADMIN</h1>
+            <img
+                  class="logo"
+                  src="../images/godsplanlogo.jpg"
+                  alt="logo" style="width: 700px; height: 500px; border-radius: 10px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);"
+                />
+        </div>
+        
     </div>
 
+
+
     <!-- Main Footer -->
-    <footer class="footer">
+    <!-- <footer class="footer">
         <strong>Copyright &copy; 2024 <a href="https://www.facebook.com/ONDicksonBeatz/">Dickson Owusu Nyantakyi</a>.</strong>
         All rights reserved.
-    </footer>
+    </footer> -->
 
 </body>
 </html>
